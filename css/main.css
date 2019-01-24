@@ -6,6 +6,7 @@
 
 html {
   box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
 
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -24,4 +25,26 @@ body {
 .img-flex {
   display: block;
   width: 100%;
+}
+
+figure {
+  margin: 0;
+  position: relative;
+}
+
+figcaption {
+  color: white;
+  max-width: 15em;
+  position: absolute;
+  bottom: .5em;
+  left: .5em;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  padding: .5em;
+}
+
+@media only screen and (max-width: 608px) {
+    .no-show {
+        display: none;
+    }
 }
